@@ -10,18 +10,18 @@ namespace MyTaskManager
 {
     public class Task
     {
-        int TaskId;
-        string Description;
-        DateTime DueDate;
-        bool IsCompleted; 
+        public int TaskId;
+        public string Description;
+        public DateTime DueDate;
+        public bool IsComplete;
 
         //Add constructor to simplify task Creation
-        public Task (int taskId, string description, DateTime dueDate)
-        {      
+        public Task(int taskId, string description, DateTime dueDate)
+        {
             TaskId = taskId;
             Description = description;
             DueDate = dueDate;
-            //IsComplete = false;
-     }
-         }
+            IsComplete = false;
+        }
+    }
 }
